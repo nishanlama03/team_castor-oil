@@ -9,6 +9,7 @@
 * | Nishan Lama | ----- | ----- |
 * | Ezuma Ekomo Ble | ----- | ----- |
 
+
 ---
 
 ## **🎯 Project Highlights**
@@ -59,6 +60,9 @@ By tackling bias in dermatology AI, this project aims to promote equitable healt
 * The dataset(s) used (i.e., the data provided in Kaggle \+ any additional sources)
 * Data exploration and preprocessing approaches
 * Challenges and assumptions when working with the dataset(s)
+
+Used Kaggle provided datasets - number of training images =  2860 and test images = 1227.
+Encode the labels, split the data into training and validation sets (0.8/0.2 split), define image data generators for training and validation sets.
 
 **Potential visualizations to include:**
 
