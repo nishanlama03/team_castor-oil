@@ -3,12 +3,11 @@
 ---
 ### **👥 Team Members**
 
-| Name | GitHub Handle | Contribution |
-| Reva Mahto | [r-oli-m]([url](https://github.com/r-oli-m)) | worked on model improvement |
-| Aisha Ahammed | ----- | ----- |
-| Diego Carillo | [dicarrillo]([url](https://github.com/dicarrillo)) | ----- |
-| Nishan Lama | ----- | ----- |
-| Ezuma Ekomo Ble | ----- | ----- |
+* | Reva Mahto | [r-oli-m]([url](https://github.com/r-oli-m)) | worked on model improvement |
+* | Aisha Ahammed | aahammed@kent.edu | ----- |
+* | Diego Carillo | [dicarrillo]([url](https://github.com/dicarrillo)) | ----- |
+* | Nishan Lama | ----- | ----- |
+* | Ezuma Ekomo Ble | ----- | ----- |
 
 ---
 
