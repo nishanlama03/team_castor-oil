@@ -3,9 +3,9 @@
 ---
 ### **👥 Team Members**
 
-* | Reva Mahto | [r-oli-m]([url](https://github.com/r-oli-m)) | worked on model improvement |
+* | Reva Mahto | [r-oli-m](https://github.com/r-oli-m) | worked on model improvement |
 * | Aisha Ahammed | aahammed@kent.edu | ----- |
-* | Diego Carillo | [dicarrillo]([url](https://github.com/dicarrillo)) | ----- |
+* | Diego Carillo | [dicarrillo](https://github.com/dicarrillo) | ----- |
 * | Nishan Lama | ----- | ----- |
 * | Ezuma Ekomo Ble | ----- | ----- |
 
