@@ -1,133 +1,120 @@
 # AJL_team_castor-oil Kaggle Project README 
 
 ---
-### **👥 Team Members**
 
-* | Reva Mahto | [r-oli-m](https://github.com/r-oli-m) | worked on model improvement |
-* | Aisha Ahammed | aahammed@kent.edu | ----- |
-* | Diego Carillo | [dicarrillo](https://github.com/dicarrillo) | ----- |
-* | Nishan Lama | ----- | ----- |
-* | Ezuma Ekomo Ble | ----- | ----- |
+### 👥 Team Members
 
-
----
-
-## **🎯 Project Highlights**
-
-**Example:**
-
-* Built a \[insert model type\] using \[techniques used\] to solve \[Kaggle competition task\]
-* Achieved an F1 score of \[insert score\] and a ranking of \[insert ranking out of participating teams\] on the final Kaggle Leaderboard
-* Used \[explainability tool\] to interpret model decisions
-* Implemented \[data preprocessing method\] to optimize results within compute constraints
-
-🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
-🔗 [WiDS Datathon 2025 | Kaggle Competition Page](https://www.kaggle.com/competitions/widsdatathon2025/overview)
+| Name            | Contact                   | Contributions                            |
+|-----------------|---------------------------|-------------------------------------------|
+| Reva Mahto      | [r-oli-m](https://github.com/r-oli-m) | Model improvement                        |
+| Aisha Ahammed   | aahammed@kent.edu         | Data preprocessing, validation strategy   |
+| Diego Carillo   | [dicarrillo](https://github.com/dicarrillo) | Exploratory data analysis (EDA)   |
+| Nishan Lama     | nishanlama03@gmail.com    | Model improvement, evaluation, GitHub setup |
+| Ezuma Ekomo Ble | ezumaekomo01@gmail.com    | Team coordination, fairness analysis      |
 
 ---
 
-## **👩🏽‍💻 Setup & Execution**
+## 🎯 Project Highlights
 
-**Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
+- Built a **Convolutional Neural Network (CNN)** using **transfer learning with EfficientNetB0** to classify dermatological images.
+- Achieved a **score of 0.51713** and ranked **in the top 25%** of teams on the final Kaggle Leaderboard.
+- Applied **Grad-CAM** for visual model explainability.
+- Used **label encoding**, **data augmentation**, and **image generators** to preprocess images and improve generalization.
 
-* How to clone the repository
-* How to install dependencies
-* How to set up the environment
-* How to access the dataset(s)
-* How to run the notebook or scripts
-
----
-
-## **🏗️ Project Overview**
-
-**Describe:**
-### **Project Overview**  
- 
-The Kaggle competition offers Break Through Tech AI Program participants a hands-on opportunity to develop AI models and refine their performance optimization skills.  
-
-While AI is advancing healthcare, dermatology AI models often struggle to accurately diagnose conditions in people with darker skin tones due to a lack of diverse training data. This can lead to misdiagnoses, delayed treatments, and worsening health disparities in underserved communities.  
-
-In partnership with the Algorithmic Justice League (AJL), Break Through Tech challenges participants to build a more inclusive dermatology AI model. Competing teams are evaluated based on a weighted average F1 score, encouraging solutions that improve fairness and accuracy.  
-
-By tackling bias in dermatology AI, this project aims to promote equitable healthcare, reduce diagnostic disparities, and improve outcomes for diverse populations.
+🔗 [AJL 2025 Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
 
 ---
 
-## **📊 Data Exploration**
+## 👩🏽‍💻 Setup & Execution
 
-**Describe:**
+1. **Clone the repo:**
 
-* The dataset(s) used (i.e., the data provided in Kaggle \+ any additional sources)
-* Data exploration and preprocessing approaches
-* Challenges and assumptions when working with the dataset(s)
+    ```bash
+    git clone https://github.com/nishanlama03/team_castor-oil.git
+    cd team_castor-oi
+    ```
 
-Used Kaggle provided datasets - number of training images =  2860 and test images = 1227.
-Encode the labels, split the data into training and validation sets (0.8/0.2 split), define image data generators for training and validation sets.
+2. **Install dependencies (Colab recommended):**
 
-**Potential visualizations to include:**
+    Most dependencies are pre-installed in Colab. If needed:
 
-* Plots, charts, heatmaps, feature visualizations, sample dataset images
+    ```bash
+    pip install kaggle kagglehub tensorflow keras opencv-python
+    ```
 
----
+3. **Access dataset:**
 
-## **🧠 Model Development**
+    You must accept the competition rules on Kaggle. Then use:
 
-**Describe (as applicable):**
+    ```python
+    import kagglehub
+    kagglehub.login()
+    kagglehub.competition_download('bttai-ajl-2025')
+    ```
 
-* Model(s) used (e.g., CNN with transfer learning, regression models)
-* Feature selection and Hyperparameter tuning strategies
-* Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
+4. **Run the notebook:**
 
----
-
-## **📈 Results & Key Findings**
-
-**Describe (as applicable):**
-
-* Performance metrics (e.g., Kaggle Leaderboard score, F1-score)
-* How your model performed overall
-* How your model performed across different skin tones (AJL)
-* Insights from evaluating model fairness (AJL)
-
-**Potential visualizations to include:**
-
-* Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
+    Open the provided Colab notebook or `.py` script and run the cells in order.
 
 ---
 
-## **🖼️ Impact Narrative**
+## 🏗️ Project Overview
 
-**Answer the relevant questions below based on your competition:**
+The AJL Kaggle challenge tasked us with building an equitable dermatology classifier that performs well across all skin tones.
 
-**WiDS challenge:**
-
-1. What brain activity patterns are associated with ADHD; are they different between males and females, and, if so, how?
-2. How could your work help contribute to ADHD research and/or clinical care?
-
-**AJL challenge:**
-
-As Dr. Randi mentioned in her challenge overview, “Through poetry, art, and storytelling, you can reach others who might not know enough to understand what’s happening with the machine learning model or data visualizations, but might still be heavily impacted by this kind of work.”
-As you answer the questions below, consider using not only text, but also illustrations, annotated visualizations, poetry, or other creative techniques to make your work accessible to a wider audience.
-Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi6TlPviC3q/view) from the Algorithmic Justice League for inspiration!
-
-1. What steps did you take to address [model fairness](https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)? (e.g., leveraging data augmentation techniques to account for training dataset imbalances; using a validation set to assess model performance across different skin tones)
-2. What broader impact could your work have?
+Many dermatology AI models are biased, especially when trained on non-diverse image datasets. This results in unequal diagnostic performance and contributes to systemic health inequities. Our goal was to address this by applying fairness-driven modeling strategies, improving performance for underrepresented skin tones.
 
 ---
 
-## **🚀 Next Steps & Future Improvements**
+## 📊 Data Exploration
 
-**Address the following:**
+- Dataset: Provided via Kaggle — 2860 training images, 1227 test images.
+- Labels were encoded into numerical form.
+- Dataset split: **80% training**, **20% validation**.
+- Used **Keras ImageDataGenerators** for real-time image augmentation.
+- Sample images were visualized to assess class distribution and quality.
 
-* What are some of the limitations of your model?
-* What would you do differently with more time/resources?
-* What additional datasets or techniques would you explore?
+---
+
+## 🧠 Model Development
+
+- Used **EfficientNetB0** for transfer learning with pre-trained ImageNet weights.
+- Fine-tuned the top layers for domain-specific features.
+- Loss function: `categorical_crossentropy`
+- Optimizer: `Adam` with learning rate `1e-4`
+- Trained on augmented data (rotation, shift, zoom, etc.)
+- Used early stopping and learning rate reduction to avoid overfitting.
 
 ---
 
-## **📄 References & Additional Resources**
+## 📈 Results & Key Findings
 
-* Cite any relevant papers, articles, or tools used in your project
+- Achieved **F1 score of 0.51713** on the AJL Kaggle leaderboard.
+- **Grad-CAM** helped visualize model focus areas during prediction.
+- Evaluated model fairness by inspecting prediction distribution across skin tones.
+- Performance improved with added augmented examples for underrepresented groups.
 
 ---
+
+### Fairness Interventions:
+
+- Data augmentation for low-represented classes.
+- Manual validation of predictions across Fitzpatrick skin types.
+- Experimented with class-weighting (less stable).
+
+### Broader Impact:
+
+- Improves trust in AI models in healthcare.
+- Encourages equity-centered medical tool design.
+- Empowers communities often ignored in mainstream AI development.
+
+---
+
+## 🚀 Next Steps & Future Improvements
+
+- Integrate annotated skin tone labels directly into training.
+- Explore ensemble models for misclassification reduction.
+- Fine-tune other architectures (ResNet50, ViT).
+- Develop fairness tracking metrics within training loop.
+- Deploy a demo app to visualize predictions and explanations.
 
