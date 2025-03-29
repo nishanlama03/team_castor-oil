@@ -31,7 +31,7 @@
 
     ```bash
     git clone https://github.com/nishanlama03/team_castor-oil.git
-    cd team_castor-oi
+    cd team_castor-oil
     ```
 
 2. **Install dependencies (Colab recommended):**
